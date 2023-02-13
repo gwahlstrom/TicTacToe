@@ -1,0 +1,33 @@
+body {
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container {
+  display: grid;
+  width: 300px;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  background-color: white;
+  gap: 2px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  display: grid;
+  background-color: blue;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  cursor: pointer;
+}
+
+.score {
+  border: 2px solid white;
+  height: 60px;
+  width: 300px;
+}
