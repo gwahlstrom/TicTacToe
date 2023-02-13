@@ -21,13 +21,15 @@ function clickBox(box) {
       box.innerHTML = "X";
       turn = false;
       count++;
+      check = true;
+      box.classList.add("disabled");
     } else if (!turn) {
       box.innerHTML = "O";
       turn = true;
       count++;
+      box.classList.add("disabled");
     }
     checkWinner();
-    console.log(count);
   };
 }
 
@@ -66,6 +68,7 @@ function checkWinner() {
     scoreBox.textContent = "O WINS";
   } else if (count === 9) {
     scoreBox.textContent = "TIE";
+    scoreBox.style.backgroundColor = "red";
   }
 }
 

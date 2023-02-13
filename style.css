@@ -24,6 +24,7 @@ body {
   align-content: center;
   color: white;
   cursor: pointer;
+  font-size: x-large;
 }
 
 .score {
@@ -32,4 +33,10 @@ body {
   width: 300px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.disabled {
+  pointer-events: none;
 }
